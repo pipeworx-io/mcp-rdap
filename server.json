@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/rdap",
+  "title": "Rdap",
+  "description": "RDAP — Registration Data Access Protocol (domains, IPs, ASNs) via IANA bootstrap",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/rdap",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-rdap",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/rdap/mcp"
+    }
+  ]
+}
