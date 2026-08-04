@@ -1,13 +1,20 @@
-# mcp-rdap
+# @pipeworx/rdap
 
-RDAP MCP — Registration Data Access Protocol via IANA bootstrap.
+[RDAP](https://www.icann.org/rdap) MCP — Registration Data Access Protocol queries for domains, IPs, and ASNs. Successor to WHOIS, returns structured JSON. Keyless (uses IANA bootstrap).
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
+- `domain(name)` — domain registration record
+- `ip(address)` — IP / netblock allocation record
+- `asn(number)` — ASN allocation record
+- `entity(handle, base?)` — registry entity by handle (e.g. registrant id)
+- `nameserver(host)` — nameserver record (where supported)
+
+## Data source
+
+Bootstrapped via [IANA RDAP bootstrap files](https://www.iana.org/dynamic/rdap/) → individual RIR / registry RDAP servers.
 
 ## Quick Start
 
@@ -23,7 +30,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +54,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
