@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-rdap",
-  "version": "0.1.0",
-  "description": "RDAP — Registration Data Access Protocol (domains, IPs, ASNs) via IANA bootstrap",
+  "version": "0.1.1",
+  "description": "RDAP MCP — Registration Data Access Protocol via IANA bootstrap.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-rdap": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "rdap"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-rdap"
+    "url": "git+https://github.com/pipeworx-io/mcp-rdap.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-103b99b8a5da6e40ab79d723590e04e021db49d8e5858f18308edd9e935ac138",
+    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
   }
 }
