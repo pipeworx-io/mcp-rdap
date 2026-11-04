@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-rdap",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "RDAP MCP — Registration Data Access Protocol via IANA bootstrap.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "rdap",
     "gatewaySlug": "rdap",
-    "sourceHash": "v1-06db240e643ba7356b0ee953d09e17bb7028c5a3f104205882364cf39d85d45e",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-c14f173d18dc9435ce17b4638b34452964c61313324f9a0d0703b8d877a46b29",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
